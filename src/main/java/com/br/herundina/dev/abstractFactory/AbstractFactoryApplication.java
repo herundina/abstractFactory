@@ -42,19 +42,19 @@ public class AbstractFactoryApplication {
     public CommandLineRunner run() {
         return args -> {
 
-            try {
-                Application app = configurationApplication();
-                app.imprimirProdutos();
-            }catch(IllegalArgumentException e){
-               log.info(e.getMessage() );
-               Application app = configurationApplication();
-               app.imprimirProdutos();
-            }finally {
-                log.info("Finalizamos seu Pedido, Obrigado por comprar conosco!");
-                log.info("Volte Sempre!");
+            boolean pedidoValido = false;
+
+            while(!pedidoValido){
+                try {
+                    Application app = configurationApplication();
+                    app.imprimirProdutos();
+                    pedidoValido = true;
+                }catch(IllegalArgumentException e){
+                    log.info(e.getMessage() );
+                }
             }
+            log.info("Finalizamos seu Pedido, Obrigado por comprar conosco!");
+            log.info("Volte Sempre!");
         };
     }
-
-
 }

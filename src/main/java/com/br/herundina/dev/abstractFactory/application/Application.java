@@ -21,8 +21,8 @@ public class Application {
     }
 
     public void imprimirProdutos(){
-        log.info("Seu combo Foi criado!");
-        log.info("Agora, confira o que tem no seu Combo ( {}, {}, {} ) ",
+        log.info("Recebemos seu pedido!");
+        log.info("Agora, confira o que tem em seu Combo ( {}, {}, {} ) ",
                 pao.fichaTecnica().getNomeProduto() ,
                 bolo.fichaTecnica().getNomeProduto() ,
                 bolacha.fichaTecnica().getNomeProduto());
