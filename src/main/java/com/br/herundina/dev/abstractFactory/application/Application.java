@@ -1,9 +1,9 @@
 package com.br.herundina.dev.abstractFactory.application;
 
-import com.br.herundina.dev.abstractFactory.abstractFactory.AbstractFactory;
-import com.br.herundina.dev.abstractFactory.produto.Bolacha;
-import com.br.herundina.dev.abstractFactory.produto.Bolo;
-import com.br.herundina.dev.abstractFactory.produto.Pao;
+import com.br.herundina.dev.abstractFactory.Domain.abstractFactory.AbstractFactory;
+import com.br.herundina.dev.abstractFactory.Domain.produto.Bolacha;
+import com.br.herundina.dev.abstractFactory.Domain.produto.Bolo;
+import com.br.herundina.dev.abstractFactory.Domain.produto.Pao;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

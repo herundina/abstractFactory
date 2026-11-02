@@ -1,4 +1,4 @@
-package com.br.herundina.dev.abstractFactory.variantes.pesoIngrediente;
+package com.br.herundina.dev.abstractFactory.Domain.variantes.pesoIngrediente;
 
 import java.math.BigDecimal;
 

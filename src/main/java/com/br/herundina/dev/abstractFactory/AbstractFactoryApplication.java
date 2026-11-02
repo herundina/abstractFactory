@@ -1,7 +1,7 @@
 package com.br.herundina.dev.abstractFactory;
 
-import com.br.herundina.dev.abstractFactory.Fabricas.FabricaDeProdutoSalgado;
-import com.br.herundina.dev.abstractFactory.abstractFactory.AbstractFactory;
+import com.br.herundina.dev.abstractFactory.Domain.Fabricas.FabricaDeProdutoSalgado;
+import com.br.herundina.dev.abstractFactory.Domain.abstractFactory.AbstractFactory;
 import com.br.herundina.dev.abstractFactory.application.Application;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;

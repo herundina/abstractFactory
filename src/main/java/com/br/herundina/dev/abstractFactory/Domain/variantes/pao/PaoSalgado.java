@@ -1,8 +1,8 @@
-package com.br.herundina.dev.abstractFactory.variantes.pao;
+package com.br.herundina.dev.abstractFactory.Domain.variantes.pao;
 
-import com.br.herundina.dev.abstractFactory.Domain.FichaTecnica;
-import com.br.herundina.dev.abstractFactory.produto.Pao;
-import com.br.herundina.dev.abstractFactory.variantes.pesoIngrediente.PesoDosIngredientes;
+import com.br.herundina.dev.abstractFactory.Domain.fichaTecnica.FichaTecnicaAutomatizada;
+import com.br.herundina.dev.abstractFactory.Domain.produto.Pao;
+import com.br.herundina.dev.abstractFactory.Domain.variantes.pesoIngrediente.PesoDosIngredientes;
 import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
@@ -25,8 +25,8 @@ public class PaoSalgado implements Pao, PesoDosIngredientes {
 
 
     @Override
-    public FichaTecnica fichaTecnica() {
-        FichaTecnica ficha = new FichaTecnica();
+    public FichaTecnicaAutomatizada fichaTecnica() {
+        FichaTecnicaAutomatizada ficha = new FichaTecnicaAutomatizada();
         ficha.setNomeProduto(NOME_PRODUTO);
         BigDecimal gramaFarinhaDeTrigo = this.calcularGramasDeFarinhaDeTrigo();
         BigDecimal litroAguaEGelo = this.calcularLitrosDeAguaEGelo();

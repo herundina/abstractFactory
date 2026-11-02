@@ -1,6 +1,5 @@
-package com.br.herundina.dev.abstractFactory.Domain;
+package com.br.herundina.dev.abstractFactory.Domain.fichaTecnica;
 
-import com.br.herundina.dev.abstractFactory.Domain.ingrediente.Ingrediente;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +11,7 @@ import java.math.BigDecimal;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class FichaTecnica extends Ingrediente {
+public class FichaTecnicaAutomatizada {
 
     private String nomeProduto;
     private BigDecimal percentualFarinha;
