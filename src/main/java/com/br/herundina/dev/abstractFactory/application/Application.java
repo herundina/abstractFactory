@@ -22,9 +22,8 @@ public class Application {
 
     public void imprimirProdutos(){
         log.info("Recebemos seu pedido!");
-        log.info("Ficha {} " , pao.fichaTecnica().toString());
-        log.info("Ficha {} " , bolo.fichaTecnica().toString());
-        log.info("Ficha {} " , bolacha.fichaTecnica().toString());
+        log.info("Ficha Pao {} " , pao.fichaTecnica().toString());
+        log.info("Ficha Bolo {} " , bolo.fichaTecnica().toString());
         log.info("Agora, confira o que tem em seu Combo ( {},  {}, {} ) ",
                 pao.fichaTecnica().getProduto(),
                 bolo.fichaTecnica().getProduto() ,
