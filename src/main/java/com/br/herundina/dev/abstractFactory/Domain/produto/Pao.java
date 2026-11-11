@@ -4,5 +4,5 @@ import com.br.herundina.dev.abstractFactory.Domain.fichaTecnica.FichaTecnicaAuto
 
 public interface Pao {
 
-    FichaTecnicaAutomatizada fichaTecnica();
+    public FichaTecnicaAutomatizada fichaTecnica();
 }

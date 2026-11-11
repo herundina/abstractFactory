@@ -27,7 +27,7 @@ public class AbstractFactoryApplication {
         if(saborCombo == 1){
             factory = new FabricaDeProdutoSalgado();
             app = new Application(factory);
-            log.info("Sabor escolhido: Saldado" );
+            log.info("Sabor escolhido: Salgada" );
             return app;
         }else {
            throw new IllegalArgumentException("Escolha Salgado, pois é o único sabor fabricado!");

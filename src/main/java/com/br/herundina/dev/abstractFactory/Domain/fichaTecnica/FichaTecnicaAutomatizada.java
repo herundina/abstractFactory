@@ -1,25 +1,21 @@
 package com.br.herundina.dev.abstractFactory.Domain.fichaTecnica;
 
-import lombok.AllArgsConstructor;
+import com.br.herundina.dev.abstractFactory.Domain.variantes.Ingrediente;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @ToString
-@NoArgsConstructor
-@AllArgsConstructor
-public class FichaTecnicaAutomatizada {
+public abstract class FichaTecnicaAutomatizada {
 
-    private String nomeProduto;
-    private BigDecimal percentualFarinha;
-    private BigDecimal percentuaAguaEGelo;
-    private BigDecimal percentualSal;
-    private BigDecimal percentualOleoDeSoja;
-    private BigDecimal percentualFementoBiologicoSeco;
-    private BigDecimal percentualDeMelhorador;
-    private BigDecimal percentualDeLecitinaDeSoja;
-    private BigDecimal percentualIngredientes;
+    protected String produto;
+    public abstract List<Ingrediente> ingredientes();
+    public abstract BigDecimal calculaPercentual();
+    public abstract BigDecimal converteKiloParaGramas(BigDecimal kilogramas);
+    public abstract LocalDateTime dHCriacao();
+
 }

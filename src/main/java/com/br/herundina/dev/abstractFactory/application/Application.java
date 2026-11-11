@@ -22,9 +22,12 @@ public class Application {
 
     public void imprimirProdutos(){
         log.info("Recebemos seu pedido!");
-        log.info("Agora, confira o que tem em seu Combo ( {}, {}, {} ) ",
-                pao.fichaTecnica().getNomeProduto() ,
-                bolo.fichaTecnica().getNomeProduto() ,
-                bolacha.fichaTecnica().getNomeProduto());
+        log.info("Ficha {} " , pao.fichaTecnica().toString());
+        log.info("Ficha {} " , bolo.fichaTecnica().toString());
+        log.info("Ficha {} " , bolacha.fichaTecnica().toString());
+        log.info("Agora, confira o que tem em seu Combo ( {},  {}, {} ) ",
+                pao.fichaTecnica().getProduto(),
+                bolo.fichaTecnica().getProduto() ,
+                bolacha.fichaTecnica().getProduto());
     }
 }
